@@ -1,0 +1,93 @@
+<html>
+ <head>
+   <title>Signup Form for Startup X</title>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+ </head>
+ <body>
+    <main>
+        <section class="testimonial">
+            <img src="http://i.imgur.com/10YZZqN.jpg" />
+            <h3> Ohans Emmanuel </h3>
+            <p>
+                I have worked with Startup X product, and I think it is fabulous. 
+                I highly recommend the use of this product. It is simply a life saver.
+            </p>
+        </section>
+        <form class="signup-form">
+            <h3> Login </h3>
+            <div>
+                <input type="email" name="email" placeholder="Email Address">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <input type="checkbox" name="agreement">
+                <span>I agree with the terms of service</span>
+            </div>      
+            <button type="submit"> LOGIN </button>
+        </form>
+    </main>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85em;
+            color: rgba(66,66,66 ,1);
+            background-color: #2B3467;
+            /*height: 100vh;
+            width: 100vw;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main {
+            width: 75%;
+            background-color: #BAD7E9;
+            display: flex;
+            border-radius: 15px;
+        }
+        /*make the width of both 50% i.e half and equal.*/
+        section, form {
+            width: 50%;
+            padding: 70px 50px;
+        }
+        section {
+            text-align: center;
+            border-right: 1px solid rgba(66,66,66 ,1);
+        }
+        p {
+            line-height: 1.7;
+        }
+        /*Reduce the width of the image*/
+        img {
+            width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        form div {
+            margin-top: 20px;
+        }
+        form button {
+            color: #fff;
+            padding: 13px 20px;
+            margin-top: 30px;
+            background-color: #EB455F;
+            border-radius: 15px;
+            border: 0;
+        }
+        form span {
+            font-size: 0.7em;
+        }
+        form input[type="email"], form input[type="password"] {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 170px 10px 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom:  1px solid rgba(66,66,66 ,1);
+            background-color: #BAD7E9;
+            color: rgba(66,66,66 ,1);
+        }
+    </style>
+</body>
+</html>
