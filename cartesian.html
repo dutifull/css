@@ -1,0 +1,50 @@
+<html>
+ <head>
+   <title> Example </title>
+ </head>
+ <body>
+   <div class="dark-box"></div>
+		
+   <div class="cartesian-x"></div>
+   <div class="cartesian-y"></div>
+   <style>
+    body {
+  min-height: 100vh;
+  background: #f1c40f;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.dark-box {
+  background: #2c3e50;
+  width: 120px;
+  height: 120px;
+  
+  position: relative;
+  top: 30;
+  left: -30;
+}
+.cartesian-x {
+  position: absolute;
+  width: 100vw;
+  height: 2px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.cartesian-x:after {
+  content: " ";
+  width: 120px;
+  height: 120px;
+  background: rgba(0,0,0,0.1);
+}
+.cartesian-y {
+  position: absolute;
+  height: 100vh;
+  width: 2px;
+  background: red;
+}
+   </style>
+ </body>
+</html>
